@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-br">
+      <head>
+        <meta charset="utf-8">
+        <title> Sobre nós</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> </link><!--Link bootstrap-->
+        <link rel="stylesheet" type="text/css" href="css/style.css"> </link><!--Link proprio-->
+        <link rel="stylesheet" type="text/css" href="css/animate.css"> </link> <!--Link biblioteca animate-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--coisas do fontawasome-->
+<link href="fontawesome/css/all.css" rel="stylesheet"> </link>
+<script defer src="fontawesome/js/all.js"></script>
+<script defer src="fontawesome/js/brands.js"></script>
+    </head>
+    <body id="bgcolor">
+    <div>
+            <nav class="navbar navbar-dark bg-dark">
+                <img src="img/Ativo 1.png" class="logo zoom" alt="Responsive image">
+                <a class="btn btn-outline-danger my-2 my-sm-0 btn-lg zoom" href="index.html">Home</a>
+                <a class="btn btn-outline-danger my-2 my-sm-0 btn-lg zoom" href="projeto.html">Projeto</a>
+                <a class="btn btn-outline-success my-2 my-sm-0 btn-lg zoom" href="personagem.html">Personagens</a>
+                <a class="btn btn-outline-success my-2 my-sm-0 btn-lg zoom" href="regra.html"> As Regras</a>
+                <a class="btn btn-outline-info my-2 my-sm-0 btn-lg zoom" href="historia.html">Sobre nós</a>
+                <a class="btn btn-outline-info my-2 my-sm-0 btn-lg zoom" href="cadastro.html">Cadastro</a>
+                <a class="btn btn-outline-light my-2 my-sm-0 btn-lg zoom" href="jogo.html">Jogue</a>
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-light zoom" data-toggle="modal" data-target="#ExemploModalCentralizado">
+  Login
+</button>
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-info" id="TituloModalCentralizado">Entrar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <form>
+        <div class="form-row">
+      <div class="modal-body">
+        <!--E-mail-->
+          <div class="form-group col-md-12">
+              <label for="inputEmail">Email: </label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+          <!--Senha-->
+          <div class="form-group col-md-12">
+              <label for="inputPassword">Senha: </label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="senha">
+          </div>
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-info">Acessar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </nav>
+      </div>
+      <!--Corpo-->
+      <header>
+        <div id=pagHistoria class="bg-dark">
+        <div class="jumbotron wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.3s">
+          <div class="container">
+              <h1 class="display-4"> A equipe </h1>
+              <p class="lead"> Hortaliças é um grupo criado na ETEC Horácio Augusto Silveira para os
+                projetos e trabalhos do primeiro semestre do curso de Desenvolvimento de Sistemas. 
+               <br> Atualmente, estamos trabalhando na solução do projeto de conclusão do primeiro semestre.</p>
+              <hr class="-4">
+          </div>
+      </div>
+          <div id="map">
+              <h2 class="text-light display-4">Nossa localização: </h2>            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.36243653021!2d-46.59859725074951!3d-23.51946326585347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58cbc5bfbf33%3A0xabc0b13f35ba14cf!2sETEC%20Professor%20Hor%C3%A1cio%20Augusto%20da%20Silveira!5e0!3m2!1spt-BR!2sbr!4v1573423158313!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="">
+              </iframe>
+              <br><br>
+              <h2 class="text-light display-4">Os membros</h2>
+              <p class="lead text-center text-light">A equipe é composta por 6 membros, todos estudantes da ETEC:</p>
+		<!--tabela com fotos dos intergantes do grupo-->
+		<table border="0" class="table wow bounceInDown" >
+			<tr>
+				<td class="zoom"><img src="img/andre.jpeg" alt="..." class="rounded-circle img-fluid" id="table"></td>
+				<td class="zoom"><img src="img/Daniel.jpeg" alt="..." class="rounded-circle img-fluid" id="table"></td>
+				<td class="zoom"><img src="img/heidgger.jpeg" alt="..." class="rounded-circle img-fluid" id="table"></td>
+				<td class="zoom"><img src="img/lucas.jpeg" alt="..." class="rounded-circle img-fluid" id="table"></td>
+				<td class="zoom"><img src="img/marcelo.jpeg" alt="..." class="rounded-circle img-fluid" id="table"></td>
+				<td class="zoom"><img src="img/tabata.jpeg" alt="..." class="rounded-circle img-fluid" id="table"></td>
+			</tr>
+			<tr class="text-light">
+				<td> André Sanches</td>
+				<td>Daniel</td>
+				<td>Lucas Heidgger</td>
+				<td>Lucas Moraes</td>
+				<td>Marcelo Araujo</td>
+				<td>Tabata</td>
+			</tr>
+			<tr class="text-light">
+				<td>
+					<a href="André Sanches" target="_blank" class="text-light"> 
+						<i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" ></i></a>
+				</td>
+				<td>
+					<a href="Daniel" target="_blank" class="text-light">
+						<i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" ></i></a>
+				</td>
+				<td>
+					<a href="https://github.com/heidgger" target="_blank" class="text-light">
+						<i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" ></i></a>
+				</td>
+				<td>
+					<a href="Lucas Moraes" target="_blank" class="text-light">
+						<i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" ></i></a>
+				</td>
+				<td>
+					<a href="https://github.com/marcelo-devc" target="_blank" class="text-light">
+						<i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" ></i></a>
+				</td>
+				<td>
+					<a href="https://github.com/TabataGrigaitis" target="_blank" class="text-light zoom">
+						<i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" ></i></a>
+				</td>
+			</tr>
+
+			
+			
+		</table>
+
+          </div>
+        </div>
+      </header>
+
+    <!--Rodape-->
+    <footer class="rodape">
+        <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark" id="feedback">
+               Deixe um feedback!
+            </h5>
+            <div class="mb-3" id="textarea">
+                <label for="validationTextarea"></label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Vamos lá, escreva algo..." required></textarea>
+            </div>
+			
+		<button type="button" class="btn btn-info zoom" data-target="#ExemploModalCentralizado">
+		  Enviar
+		</button>
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">ajuda</h5>
+    
+            <ul class="list-unstyled font-weight-bold">
+              <li>
+                <a href="historia.html" class="text-info">Sobre nós </a>
+              </li>
+              <li>
+                <a href="projeto.html" class="text-info"> Projeto </a>
+              </li>
+              <li>
+                <a href="regra.html" class="text-info"> Regras </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">Acompanhe</h5>
+    
+            <ul class="list-unstyled font-weight-bold">
+              <li>
+               <p> <a href="mailto:contatoteclandes" class="text-info">teclanders@gmail.com</a> </p>
+              </li>
+            </ul>
+			
+			<ul class="list-unstyled font-weight-bold">
+				  <li>
+					<p> <a href="tel:SAC08001291482" class="text-info">SAC 0800 129 1482</a> </p>
+				  </li>
+			 </ul>
+			
+			<ul class="list-unstyled font-weight-bold">
+              
+              <li>
+                <a href="https://www.consumidor.gov.br/pages/principal/?1573841392140" target="_blank" class="text-info">Consumidor.gov.br</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+          
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+      <!-- Social buttons -->
+      <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Facebook" alt="imagem do facebook, rede social"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Twitter" alt="imagem do Twitter, rede social"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Google" alt="imagem do google-gmail"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Linkedin" alt="imagem do linkedin, rede social voltada para o mercado de trabalho"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic " >
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Instagram" alt="imagem do instagram, rede social"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Github" alt="imagem do github, comunidade para espor projetos de Tecnologia"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+    </div>
+  </div>
+          <p> © 2019 Hortaliças Games, inc. Todos os direitos reservados. </p>
+      </footer>
+    </body> 
+</html>

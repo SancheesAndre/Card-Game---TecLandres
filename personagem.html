@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="pt-br">
+      <head>
+        <meta charset="utf-8">
+        <title>Os Personagens </title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> </link><!--Link bootstrap-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"> </link><!--Link proprio-->
+		<link rel="stylesheet" type="text/css" href="css/animate.css"> </link><!--Link biblioteca animate-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--coisas do fontawasome-->
+<link href="fontawesome/css/all.css" rel="stylesheet"> </link>
+<script defer src="fontawesome/js/all.js"></script>
+<script defer src="fontawesome/js/brands.js"></script>
+
+    </head>
+    <body id="bgcolor">
+        </div>
+        <div>
+                <nav class="navbar navbar-dark bg-dark">
+					<img src="img/Ativo 1.png" class="logo zoom" alt="Responsive image">
+                    <a class="btn btn-outline-danger my-2 my-sm-0 btn-lg zoom" href="index.html">Home</a>
+                    <a class="btn btn-outline-danger my-2 my-sm-0 btn-lg zoom" href="projeto.html">Projeto</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0 btn-lg zoom" href="personagem.html">Personagens</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0 btn-lg zoom" href="regra.html"> As Regras</a>
+                    <a class="btn btn-outline-info my-2 my-sm-0 btn-lg zoom" href="historia.html">Sobre nós</a>
+					<a class="btn btn-outline-info my-2 my-sm-0 btn-lg zoom" href="cadastro.html">Cadastro</a>
+					<a class="btn btn-outline-light my-2 my-sm-0 btn-lg zoom" href="jogo.html">Jogue</a>
+    <!-- Botão para acionar modal -->
+    <button type="button" class="btn btn-light zoom" data-toggle="modal" data-target="#ExemploModalCentralizado">
+      Login
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-success" id="TituloModalCentralizado">Entrar</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <form>
+            <div class="form-row">
+          <div class="modal-body">
+            <!--E-mail-->
+              <div class="form-group col-md-12">
+                  <label for="inputEmail">Email: </label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+              <!--Senha-->
+              <div class="form-group col-md-12">
+                  <label for="inputPassword">Senha: </label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="senha">
+              </div>
+            </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-success">Acessar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        </nav>
+          </div>
+	<!--conteudo com imagens dos personagens-->
+	
+	<!--um-->
+    <header>
+      <div id="pagPersonagem" class="bg-dark">
+		<h1 class="display-4 text-light animated fadeIn">Os personagens</h1>
+		<section class=" wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
+		<div class="card mb-3" style="max-width: 900px;">
+		  <div class="row no-gutters">
+			<div class="col-md-5">
+			  <img src="imgCard/1.png" class="card-img zoom imgPersonagem" title="Guerreiro Hortaliça" alt="Utiliza sua espada feita da Floresta da Vida, e com ela pode cortar qualquer coisa.
+					Foi o primeiro das criaturas a ganhar vida própria, e vaga em rumo de batalhas desde então.">
+			</div>
+			<div class="col-lg">
+			  <div class="card-body">
+				<h5 class="card-title text-success">Guerreiro Hortaliça</h5>
+				<p class="lead text-left">Utiliza sua espada feita da Floresta da Vida, e com ela pode cortar qualquer coisa.
+					Foi o primeiro das criaturas a ganhar vida própria, e vaga em rumo de batalhas desde então.</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<!--dois-->
+	<section class=" wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0.9s">
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+				<img src="imgCard/2.png" class="card-img zoom" title="Planador" alt="Consegue ficar no ar por longos períodos, mas após isso, precisa
+				enterrar parte de seu corpo no chão para recuperar energia.">
+			  </div>
+			  <div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-success">Planador</h5>
+			<p class="lead text-left" >Consegue ficar no ar por longos períodos, mas após isso, precisa
+				enterrar parte de seu corpo no chão para recuperar energia.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</section>
+	<!--três-->
+	<section class=" wow fadeInRight" data-wow-duration="3s" data-wow-delay="0.3s">
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+		  <img src="imgCard/3.png" class="card-img zoom" title="Carvalho vivo" alt="Um pedaço de trongo das as Arvores da vida que foi possuído por um espirito... 
+				preso em restos de metais.">
+		</div>
+		<div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-success">Carvalho vivo</h5>
+			<p class="lead text-left" >Um pedaço de trongo das as Arvores da vida que foi possuído por um espirito... 
+				preso em restos de metais.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</section>
+	<!--Quatro Infernalha-->
+	<section class=" wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0.3s">
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+		  <img src="imgCard/4.png" class="card-img zoom" title="Infernalha" alt="Lento mas com ataques muito fortes, consegue soltar uma rajada de fogo pela boca.">
+		</div>
+		<div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-danger">Infernalha</h5>
+			<p class="lead text-left" >Lento mas com ataques muito fortes, consegue soltar uma rajada de fogo pela boca.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</section>
+	<!--Cinco-->
+	<section class=" wow fadeInRight" data-wow-duration="3s" data-wow-delay="0.3s">
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+		  <img src="imgCard/5.png" class="card-img zoom" title="Aquecedor" alt="Terrível e esquentado, pode usar o gás da atmosfera para aumentar seu poder contra qualquer
+				outro inimigo que apareça.">
+		</div>
+		<div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-danger">Aquecedor</h5>
+			<p class="lead text-left" >Terrível e esquentado, pode usar o gás da atmosfera para aumentar seu poder contra qualquer
+				outro inimigo que apareça.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</section>
+	<!--Seis-->
+	<section class=" wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0.3s">
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+		  <img src="imgCard/6.png" class="card-img zoom" title="Lançador" alt="Pode colocar coisas na sua cabeça e usar um impulso de fogo para arremessa-las para longe.">
+		</div>
+		<div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-danger">Lançador</h5>
+			<p class="lead text-left">Pode colocar coisas na sua cabeça e usar um impulso de fogo para arremessa-las para longe.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</section>
+	<!--Sete-->
+	<section class=" wow fadeInRight" data-wow-duration="3s" data-wow-delay="0.3s">
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+		  <img src="imgCard/7.png" class="card-img zoom" title="Triceráculo" alt="Criatura pacífica, normalmente se esconde no fundo dos lagos. Utiliza um jato de tinta para fugir
+				porém tem forças e defesas altas para batalhar.">
+		</div>
+		<div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-info">Triceráculo</h5>
+			<p class="lead text-left" >Criatura pacífica, normalmente se esconde no fundo dos lagos. Utiliza um jato de tinta para fugir
+				porém tem forças e defesas altas para batalhar.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</section>
+	<!--Oito-->
+	<section class=" wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0.3s">
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+		  <img src="imgCard/8.png" class="card-img zoom" title="Torpedo" alt="Quase um tanque aquático. Consegue despedaçar qualquer coisa e pode usar a turbina, além de 
+				girar suas nadadeiras trazeiras como hélices pra alcançar altas velocidades.">
+		</div>
+		<div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-info">Torpedo</h5>
+			<p class="lead text-left">Quase um tanque aquático. Consegue despedaçar qualquer coisa e pode usar a turbina, além de 
+				girar suas nadadeiras trazeiras como hélices pra alcançar altas velocidades.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</section>
+	<!--Nove-->
+	<section class=" wow fadeInRight" data-wow-duration="3s" data-wow-delay="0.3s" >
+			<div class="card mb-3" style="max-width: 900px;">
+			  <div class="row no-gutters">
+				<div class="col-md-5">
+		  <img src="imgCard/9.png" class="card-img zoom" title="Mordedor"alt="Permanece parado em beiras de rios esperando presas passarem em sua frente, para fechar sua boca
+				em cima delas. Pode comer até mesmo pedras.">
+		</div>
+		<div class="col-lg">
+		  <div class="card-body">
+			<h5 class="card-title text-info">Mordedor</h5>
+			<p class="lead text-left">Permanece parado em beiras de rios esperando presas passarem em sua frente, para fechar sua boca
+				em cima delas. Pode comer até mesmo pedras.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>	
+	</section>
+</div>
+	</header>
+	
+    
+    <!--Rodape-->
+    <footer class="rodape">
+        <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark" id="feedback">
+               Deixe um feedback!
+            </h5>
+            <div class="mb-3" id="textarea">
+                <label for="validationTextarea"></label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Vamos lá, escreva algo..." required></textarea>
+            </div>
+			
+		<button type="button" class="btn btn-success zoom" data-target="#ExemploModalCentralizado">
+		  Enviar
+		</button>
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4  text-dark">ajuda</h5>
+    
+            <ul class="list-unstyled font-weight-bold">
+              <li>
+                <a href="historia.html" class="text-success">Sobre nós </a>
+              </li>
+              <li>
+                <a href="projeto.html" class="text-success"> Projeto </a>
+              </li>
+              <li>
+                <a href="regra.html" class="text-success"> Regras </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4  text-dark">Acompanhe</h5>
+    
+            <ul class="list-unstyled font-weight-bold">
+              <li>
+               <p> <a href="mailto:contatoteclandes" class="text-success">teclanders@gmail.com</a> </p>
+              </li>
+            </ul>
+			
+			<ul class="list-unstyled font-weight-bold">
+				  <li>
+					<p> <a href="tel:SAC08001291482" class="text-success">SAC 0800 129 1482</a> </p>
+				  </li>
+			 </ul>
+			
+			<ul class="list-unstyled font-weight-bold">
+              
+              <li>
+                <a href="https://www.consumidor.gov.br/pages/principal/?1573841392140" target="_blank" class="text-success">Consumidor.gov.br</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+          
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+      <!-- Social buttons -->
+      <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Facebook" alt="imagem do facebook, rede social"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Twitter" alt="imagem do Twitter, rede social"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Google" alt="imagem do google-gmail"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Linkedin" alt="imagem do linkedin, rede social voltada para o mercado de trabalho"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Instagram" alt="imagem do instagram, rede social"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Github" alt="imagem do github, comunidade para espor projetos de Tecnologia"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+	<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+  </div>
+          <p> © 2019 Hortaliças Games, inc. Todos os direitos reservados. </p>
+      </footer>
+        </body> 
+</html>

@@ -1,0 +1,266 @@
+
+/* pagina principal - index*/
+/*ideia de identidade visual: cores dos elementos
+azul #70A1FF
+vemelho #BC4F3F
+verde #B7D664 */
+body {
+    background-image: url(Bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#pagHome{
+    background-color: #DEDEDE;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0%;
+
+}
+
+.logo{
+    width:10%;
+    max-width: 100px;
+}
+
+#map {
+    text-align: center;
+}
+
+/* fim da pagina principal*/
+            /* pagina projeto*/
+#pagProjeto  {
+    border-radius: 10px;
+    position: static;
+    background-color:#BC4F3F;
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+#positionCarousel{
+    width: 30%;
+    left: 50%;
+    margin: auto;
+}
+
+            /* fim pagina projeto*/
+/* Inicio pagina historia*/
+#pagHistoria {
+    border-radius: 10px;
+    position: static;
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* fim pagina historia*/
+/* Inicio pagina Personagens */
+#pagPersonagem {
+    border-radius: 10px;
+    position: static;
+    background-color:#BC4F3F;
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* fim pagina Personagens*/
+/* Inicio pagina Regras*/
+.pagRegras {
+    border-radius: 10px;
+    position: static;
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* fim pagina Regras*/
+/* Inicio pagina de cadastro*/
+/*#bgcolor{
+    background-color: #17A2B8;
+}*/
+#pagCadastro{
+    
+    border-radius: 10px;
+    position: static;
+    padding: 100px 25%;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: 0.9;
+    
+}
+#pagJogo{ 
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: verdana;
+    padding: 10px;
+}
+.negrito { 
+    font-weight: bold; font-size: 72px; 
+}
+.nome { color: #FF0000; font-weight: bold; }
+#cabeçalho{
+    text-align:center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: fantasy;
+    font-size: 30px;
+    color:rgb(85, 85, 85);
+}
+.rodape{
+    text-align:center;
+    margin-bottom: 0%;
+    margin-top: 20%;
+    background-color: #DEDEDE;
+    bottom: 0px;
+    padding: 50px;
+	/*color: #17a2b8*/
+}
+/*Links redes sociais
+h5 
+{
+	color: #17a2b8;
+}
+a {
+	text-decoration: none;
+	color: #17a2b8;
+}
+.a 
+{
+	color: #17a2b8;
+}*/
+
+#botao {
+    text-align: center;
+    margin-top: 20px;
+}
+/* fim pagina cadastro*/
+/* Estilizacao das divs do radape*/
+#divAjuda {
+    background-color: black;
+    margin-right: 70%;
+}
+#divAcompanhe {
+    background-color: blueviolet;
+    margin-left: 70%;
+}
+#divSobre {
+    background-color: antiquewhite;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0%;
+    bottom: 0px;
+}
+#divHortaliças {
+    background-color: chartreuse;
+    text-align: center;
+}
+
+.ajuda {
+    text-align: left;
+}
+
+.sobre {
+    text-align: center;
+}
+
+.contato {
+    text-align: right;
+    margin-top: 0%;
+}
+
+#textarea {
+    margin-top: auto;
+}
+
+#feedback  {
+    margin-top: 0%;
+}
+/*fazer animação de aumentar img aqui */
+.imgGrupo{
+    overflow: hidden;
+    position: static;
+    border-radius: 20px;
+    width: 70%;
+    margin: 10px;
+}
+
+/*imagem do carrosel ficou desse jeito com esses atributos*/
+.d-block {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Aqui ficam as divs e classes da pagina personagens*/
+
+/* imagem imgRegras*/
+
+#imgRegras { 
+	text-align: right;
+	margin-top: -35%;
+	margin-right: 5%;
+}
+
+#imgElemento {
+	display: table;
+}
+
+/* Imagens do grupo em tabela*/
+
+#table {
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	
+}
+.zoom{
+    overflow: hidden;
+}
+.zoom img {
+    max-width: 100%;
+    transition: all 0.7s;
+}
+.zoom:hover{
+    transform:scale(1.2);
+    transition: 1s;
+}
+.carouselSize{
+    max-width:500px;
+}
+
+/*animação da index textos e botoes*/
+.ir {
+	display:block;
+	font-weight:400;
+	text-align:center;
+	color:#fff;
+	font-family: fantasy;
+	border: 0px;
+    padding: 10px;	
+	}
+/*#id {
+	font-weight:700;
+	text-align:center;
+	color:white;background-color:#17A2BB;
+	font-family: TimesNewRoman;
+	border: 
+}*/
+/*animação da index textos e botoes*/
+#id {
+background-color:#DC3545;
+display:inline-block;font-weight:400;color:#fff;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.50rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+/*animação da index textos e botoes*/
+#invocador 
+{
+	text-align: center;
+	font-weight:400;
+	color: white;
+	font-family: sans-serif;
+}

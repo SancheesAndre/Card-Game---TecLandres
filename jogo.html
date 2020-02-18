@@ -1,0 +1,261 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Hortaliças" />
+	<meta name="keywords" content="jokenpo, javascript, jokenpo em javascript, jskenpo, elementos javascript" />
+	<title>TecLanders</title>
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> </link> <!--Link bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> </link> <!--Link proprio-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css"> </link><!--Link biblioteca animate-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!--coisas do fontawasome-->
+	<link href="fontawesome/css/all.css" rel="stylesheet"> </link>
+	<script defer src="fontawesome/js/all.js"></script>
+	<script defer src="fontawesome/js/brands.js"></script>
+	<script type="text/javascript">
+		function jskenpo(jogador){
+
+			var nr = 0
+			do {
+			nr = Math.random() * 3;
+			cpu = Math.round(nr);
+			} while (cpu == 0)
+				if (jogador == cpu){
+					resultado = '<img src="imgame/' + jogador + '.png" /> <span class="negrito">x</span> <img src="imgame/' + cpu + '.png" />';
+					resultado = resultado + '<h3><p class="resultado">Empate!</p></h3>';
+			}	else {
+				if ((jogador == 1 && cpu == 3) || (jogador == 2 && cpu == 1) || (jogador == 3 && cpu == 2)){
+					resultado = '<img src="imgame/' + jogador + '.png" /> <span class="negrito">x</span> <img src="imgame/' + cpu + '.png" />';
+					resultado = resultado + '<h3><p class="resultado"><span class="nome">Jogador </span>ganhou!</p></h3>';
+			}
+				else{
+					resultado = '<img src="imgame/' + jogador + '.png" /> <span class="negrito">x</span> <img src="imgame/' + cpu + '.png" />';
+				resultado = resultado + '<h3><p class="resultado"><span class="nome">CPU </span>ganhou!</p></h3>';
+			}
+		}
+			document.getElementById("resultado").innerHTML = resultado;
+}
+	</script>
+	<style type="text/css">
+		
+		img {
+			width: 10%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+                <nav class="navbar navbar-dark bg-dark">
+                    <img src="img/Ativo 1.png" class="logo zoom" alt="Responsive image">
+                    <a class="btn btn-outline-danger my-2 my-sm-0 btn-lg zoom" href="index.html">Home</a>
+                    <a class="btn btn-outline-danger my-2 my-sm-0 btn-lg zoom" href="projeto.html">Projeto</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0 btn-lg zoom" href="personagem.html">Personagens</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0 btn-lg zoom" href="regra.html"> As Regras</a>
+                    <a class="btn btn-outline-info my-2 my-sm-0 btn-lg zoom" href="historia.html">Sobre nós</a>
+                    <a class="btn btn-outline-info my-2 my-sm-0 btn-lg zoom" href="cadastro.html">Cadastro</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 btn-lg zoom" href="jogo.html">Jogue</a>
+    <!-- Botão para acionar modal -->
+    <button type="button" class="btn btn-light zoom" data-toggle="modal" data-target="#ExemploModalCentralizado">
+      Login
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="TituloModalCentralizado">Entrar</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <form>
+            <div class="form-row">
+          <div class="modal-body">
+            <!--E-mail-->
+              <div class="form-group col-md-12">
+                  <label for="inputEmail">Email: </label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+              <!--Senha-->
+              <div class="form-group col-md-12">
+                  <label for="inputPassword">Senha: </label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="senha">
+              </div>
+            </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-danger">Acessar</button>
+          </div>
+        </div>
+	  </div>
+	</nav>
+    </div>
+        
+         
+	<header>
+			<div id="pagProjeto" class="bg-dark">
+<!--game a partir daqui-->
+<!--jumbotron-->
+<div class="jumbotron wow fadeInDown" data-wow-duration="3s" data-wow-delay="0.3s">
+    <div id="pagJogo">
+		<h1 class="display-4">TecLanders</h1>
+<h4>Fa&ccedil;a sua escolha!</h4>
+<p>
+<div id="game">
+<a href="#" onclick="javascript: jskenpo(1);"><img src="imgame/fogo.png" class="wow zoom" alt="imagem do fogo"></a>
+<a href="#" onclick="javascript: jskenpo(2);"><img src="imgame/agua.png" class="wow zoom" alt="imagem da agua"></a>
+<a href="#" onclick="javascript: jskenpo(3);"><img src="imgame/planta.png" class="wow zoom" alt="imagem da planta"></a>
+</div>
+</p>
+<div id="resultado">
+</div>
+<div id="rodape">
+Powered by Hortaliças
+</div>
+      </div>
+</div>
+      <!--fim do game-->
+	</header>
+
+	<!--Rodape-->
+	<footer class="rodape">
+        <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark" id="feedback">
+               Deixe um feedback!
+            </h5>
+            <div class="mb-3" id="textarea">
+                <label for="validationTextarea"></label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Vamos lá, escreva algo..." required></textarea>
+            </div>
+			
+		<button type="button" class="btn btn-danger zoom" data-target="#ExemploModalCentralizado">
+		  Enviar
+		</button>
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">ajuda</h5>
+    
+            <ul class="list-unstyled font-weight-bold">
+              <li>
+                <a href="historia.html"class="text-danger">Sobre nós </a>
+              </li>
+              <li>
+                <a href="projeto.html"class="text-danger"> Projeto </a>
+              </li>
+              <li>
+                <a href="regra.html"class="text-danger"> Regras </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">Acompanhe</h5>
+    
+            <ul class="list-unstyled font-weight-bold">
+              <li>
+               <p> <a href="mailto:contatoteclandes"class="text-danger">teclanders@gmail.com</a> </p>
+              </li>
+            </ul>
+			
+			<ul class="list-unstyled font-weight-bold">
+				  <li>
+					<p> <a href="tel:SAC08001291482"class="text-danger">SAC 0800 129 1482</a> </p>
+				  </li>
+			 </ul>
+			
+			<ul class="list-unstyled font-weight-bold">
+              
+              <li>
+                <a href="https://www.consumidor.gov.br/pages/principal/?1573841392140" target="_blank" class="text-danger">Consumidor.gov.br</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+          
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+      <!-- Social buttons -->
+      <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Facebook" alt="imagem do facebook, rede social"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Twitter" alt="imagem do Twitter, rede social"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Google" alt="imagem do google-gmail"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Linkedin" alt="imagem do linkedin, rede social voltada para o mercado de trabalho"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Instagram" alt="imagem do instagram, rede social"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-github a-lg white-text mr-md-5 mr-3 fa-2x zoom" title="Github" alt="imagem do github, comunidade para espor projetos de Tecnologia"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+          <p> © 2019 Hortaliças Games, inc. Todos os direitos reservados. </p>
+	</footer>
+</body>
+<script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+</html>

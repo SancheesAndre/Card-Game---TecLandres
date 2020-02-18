@@ -1,0 +1,93 @@
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    left: 0;
+}
+.l {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    left:0;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.l-01 {
+    background-image: url(img\01.png);
+}
+.l-02 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
+.l-03 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-3.png);
+}
+.l-04 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-4.png);
+}
+.l-05 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+}
+.l-06 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
+.l-07 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-3.png);
+}
+.l-08 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-4.png);
+}
+.l-09 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+}
+.l-10 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
+.l-11 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+}
+.l-12 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
+.l-13 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-3.png);
+}
+.l-14 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-4.png);
+}
+.l-15 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+}
+.l-16 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
+.l-17 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-3.png);
+}
+.l-18 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-4.png);
+}
+.l-19 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+}
+.l-20 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
+.l-21 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+}
+.l-22 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
+.l-23 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-3.png);
+}
+.l-24 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-4.png);
+}
+.l-25 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+}
+.l-26 {
+    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+}
