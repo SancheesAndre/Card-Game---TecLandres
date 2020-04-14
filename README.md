@@ -9,6 +9,6 @@ Foram usadas as linguagens HTML5, CSS3 e JavaScript. Também utilizamos algumas 
 [Andre Sanches](https://github.com/SancheesAndre)<br>
 [Daniel Ferreira](https://github.com/Dan0805)<br>
 [Lucas Heidgger](https://github.com/heidgger)<br>
-[Lucas Moraes]()<br>
+[Lucas Moraes](https://github.com/lucasmoraessilva)<br>
 [Marcelo Araujo]()<br>
 [Tabata Grigaitis](https://github.com/TabataGrigaitis)
